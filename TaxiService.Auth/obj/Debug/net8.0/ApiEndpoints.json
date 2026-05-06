@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "TaxiService.Auth.Controllers.AuthController",
+    "Method": "GetUsers",
+    "RelativePath": "api/taxi/active-drivers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaxiService.Auth.Controllers.AuthController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/taxi/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "TaxiService.Auth.Controllers.AuthController\u002BChangePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaxiService.Auth.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/taxi/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "TaxiService.Auth.Controllers.AuthController\u002BLoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaxiService.Auth.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/taxi/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "TaxiService.Auth.Controllers.AuthController\u002BRegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
