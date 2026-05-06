@@ -21,18 +21,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore TaxiService.Auth/TaxiService.Auth.csproj
 
       - name: Build
-        run: dotnet build --no-restore --configuration Release
+        run: dotnet build TaxiService.Auth/TaxiService.Auth.csproj --no-restore
 
       - name: Run tests with coverage
-        run: |
-          dotnet test --no-build \
-            --configuration Release \
-            --collect:"XPlat Code Coverage" \
-            --results-directory ./coverage-results \
-            -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura
+        run: dotnet test TaxiService.Auth.Tests/TaxiService.Auth.Tests.csproj --no-build --verbosity normal
 
       - name: SonarQube Analysis
         uses: SonarSource/sonarqube-scan-action@master
